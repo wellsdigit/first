@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <pre class="screen" id="screen"></pre>
+        <!-- <input type="text" class="screen" id="screen" readonly> -->
+        <div class="keys">
+            <div class="row">
+                <span id="filter"></span>
+                <button type="button" class="btn" onclick="show('`')">`</button>
+                <button type="button" class="btn" onclick="show('1')">1</button>
+                <button type="button" class="btn" onclick="show('2')">2</button>
+                <button type="button" class="btn" onclick="show('3')">3</button>
+                <button type="button" class="btn" onclick="show('4')">4</button>
+                <button type="button" class="btn" onclick="show('5')">5</button>
+                <button type="button" class="btn" onclick="show('6')">6</button>
+                <button type="button" class="btn" onclick="show('7')">7</button>
+                <button type="button" class="btn" onclick="show('8')">8</button>
+                <button type="button" class="btn" onclick="show('9')">9</button>
+                <button type="button" class="btn" onclick="show('0')">0</button>
+                <button type="button" class="btn" onclick="show('-')">-</button>
+                <button type="button" class="btn" onclick="show('=')">=</button>
+                <button type="button" class="btn" onclick="backspace()" id="backspace">&larr; backspace</button>
+                
+            </div>
+            <div class="row">
+                <span id="filterx"></span>
+                <button type="button" class="btn" onclick="tab()" id="tab">tab</button>
+                <button type="button" class="btn" onclick="show('q')">Q</button>
+                <button type="button" class="btn" onclick="show('w')">W</button>
+                <button type="button" class="btn" onclick="show('e')">E</button>
+                <button type="button" class="btn" onclick="show('r')">R</button>
+                <button type="button" class="btn" onclick="show('t')">T</button>
+                <button type="button" class="btn" onclick="show('y')">Y</button>
+                <button type="button" class="btn" onclick="show('u')">U</button>
+                <button type="button" class="btn" onclick="show('i')">I</button>
+                <button type="button" class="btn" onclick="show('o')">O</button>
+                <button type="button" class="btn" onclick="show('p')">P</button>
+                <button type="button" class="btn" onclick="show('[')">[</button>
+                <button type="button" class="btn" onclick="show(']')">]</button>
+                <button type="button" class="btn" onclick="show('\\')">\</button>
+                
+            </div>
+            <div class="row">
+                <button type="button" class="btn" onclick="caps()" id="caps">caps lock</button>
+                <span class="dark" id="indic" >off</span>
+                <button type="button" class="btn" onclick="show('a')">A</button>
+                <button type="button" class="btn" onclick="show('s')">S</button>
+                <button type="button" class="btn" onclick="show('d')">D</button>
+                <button type="button" cl ass="btn" onclick="show('f')">F</button>
+                <button type="button" class="btn" onclick="show('g')">G</button>
+                <button type="button" class="btn" onclick="show('h')">H</button>
+                <button type="button" class="btn" onclick="show('j')">J</button>
+                <button type="button" class="btn" onclick="show('k')">K</button>
+                <button type="button" class="btn" onclick="show('l')">L</button>
+                <button type="button" class="btn" onclick="show(';')">;</button>
+                <button type="button" class="btn" onclick="show('\'')">'</button>
+                <button type="button" class="btn" onclick="enter()">&lArr; enter</button>
+            </div>
+            <div class="row">
+                <button type="button" class="btn" onclick="shift()" class="shift">&uarr; shift</button>
+                <button type="button" class="btn" onclick="show('z')">Z</button>
+                <button type="button" class="btn" onclick="show('x')">X</button>
+                <button type="button" class="btn" onclick="show('c')">C</button>
+                <button type="button" class="btn" onclick="show('v')">V</button>
+                <button type="button" class="btn" onclick="show('b')">B</button>
+                <button type="button" class="btn" onclick="show('n')">N</button>
+                <button type="button" class="btn" onclick="show('m')">M</button>
+                <button type="button" class="btn" onclick="show(',')">,</button>
+                <button type="button" class="btn" onclick="show('.')">.</button>
+                <button type="button" class="btn" onclick="shift()" class="shift">&uarr; shift</button>
+            </div>
+            <div class="row">
+                <span id="filtery"></span>
+                <span id="filterz"></span>
+                <button type="button" class="btn" onclick="ctrl()">ctrl</button>
+                <button type="button" class="btn" onclick="fn()">fn</button>
+                <button type="button" class="btn" onclick="win()">win</button>
+                <button type="button" class="btn" onclick="alt()">alt</button>
+                <button type="button" class="btn" onclick="space()" id="space-b">space</button>
+                <button type="button" class="btn" onclick="alt()">alt</button>
+                <button type="button" class="btn" onclick="left()"><i class="fa fa-caret-left"></i></button>
+                <span>
+                    <button type="button" class="btn" onclick="up()"><i class="fa fa-caret-up"></i></button>
+                    <button type="button" class="btn" onclick="down()"><i class="fa fa-caret-down"></i></button>
+                </span>
+                <button type="button" class="btn" onclick="right()"><i class="fa fa-caret-right"></i></button>
+                
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- <script src="script.js"></script> -->
+    <script src="javascript.js"></script>
+</body>
+</html>
